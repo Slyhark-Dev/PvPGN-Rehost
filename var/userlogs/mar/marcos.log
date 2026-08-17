@@ -1,0 +1,195 @@
+[Jun 02 10:10] /f a luis
+[Jun 02 10:18] /join 123
+[Jun 02 17:16] /icon list
+[Jun 02 17:17] /help
+[Jun 02 17:17] /ladderactivate
+[Jun 02 17:17] /topic
+[Jun 02 17:17] /quota
+[Jun 02 17:18] /flag 3
+[Jun 02 17:18] /flag 4
+[Jun 02 17:18] /flag 1
+[Jun 02 17:18] /flag 2
+[Jun 02 17:18] /flag 5
+[Jun 02 17:18] /flag 6
+[Jun 02 17:18] /flag 8
+[Jun 02 17:19] /flag 10
+[Jun 02 17:19] /flag 100
+[Jun 02 17:19] /flag 1000
+[Jun 02 17:19] /flag 650
+[Jun 02 17:19] /flag 7
+[Jun 02 17:19] /flag 3
+[Jun 02 17:19] /flag 100
+[Jun 02 17:19] /flag 99
+[Jun 02 17:19] /flag 93
+[Jun 02 17:19] /flag list
+[Jun 02 17:19] /flag doom
+[Jun 02 17:19] /flag grunt
+[Jun 02 17:19] /flag ogre
+[Jun 02 17:20] /flag 3
+[Jun 02 17:21] /set marcos Record\SEXP\0_wins 999
+[Jun 02 17:23] /set MARCOS Record\WARXP\0_wins 999
+[Jun 02 17:23] /flag 3
+[Jun 02 17:25] /users
+[Jun 02 17:25] /set marcos BNET\auth\botlogin true
+[Jun 02 17:25] /stats
+[Jun 02 17:26] /stats marcos
+[Jun 02 17:26] /set marcos BNET\auth\botlogin true
+[Jun 02 17:28] /ladderinfo 1000 WARXP
+[Jun 02 17:40] /flag chat
+[Jun 02 17:40] /FLAG CHAT
+[Jun 02 17:40] /flag chat
+[Jun 02 17:40] /flag 3
+[Jun 02 17:41] /flag 40
+[Jun 02 17:41] /flag 28
+[Jun 02 17:41] /flag 0x00000028
+[Jun 02 17:41] /flag 0x000040
+[Jun 02 17:41] /flag 0x000000
+[Jun 02 17:42] /flag 0x00000008
+[Jun 02 17:42] /flag 0x00000002
+[Jun 02 17:42] /f a marcosyn
+[Jun 02 17:43] /join 123
+[Jun 02 17:43] /flag marcosyn /flag 0x00000028
+[Jun 02 17:43] /flag marcos
+[Jun 02 17:43] /flag 0x0000001
+[Jun 02 17:43] /flag /flag 0x00000003
+[Jun 02 17:44] /flag 0x000000
+[Jun 02 17:45] /flag 0x00000001
+[Jun 02 17:45] /flag 00100000
+[Jun 02 17:45] /flag 00000004
+[Jun 02 17:46] /flag 00200000
+[Jun 02 17:46] /flag 0x00200000
+[Jun 02 17:46] /flag 0x0200000
+[Jun 02 17:47] /flag 0x00000040
+[Jun 02 17:47] /flag 00000003
+[Jun 02 17:49] /icon list
+[Jun 02 17:50] /icon add marcos smile
+[Jun 02 17:50] /icon list
+[Jun 02 17:51] /icon set marcosyn smile
+[Jun 02 17:53] /stats
+[Jun 02 17:53] /set marcosyn Record\WARXP\0_wins 999
+[Jun 02 17:53] /set marcosyn Record\WARXP\0_wins 4
+[Jun 02 17:53] /set marcosyn Record\WARXP\0_wins 2
+[Jun 02 17:54] /set marcosyn Record\WARXP\2_wins 9
+[Jun 02 17:55] /set marcosyn Record\W3XP\0_wins 999
+[Jun 02 17:57] /set MARCOSYN Record\W3XP\0_wins 999
+[Jun 02 17:57] /set MARCOSYN Record\W3XP\1_wins 999
+[Jun 02 17:57] /set MARCOSYN Record\W3XP\2_wins 999
+[Jun 02 18:00] /icon list
+[Jun 02 18:02] /icon list
+[Jun 02 18:02] /join 123
+[Jun 02 18:03] /icon set marcosyn Universe
+[Jun 02 18:07] /join 123
+[Jun 02 18:07] /whois marcosyn
+[Jun 02 18:08] /icon list
+[Jun 02 18:08] /icon set marcosyn warrior
+[Jun 02 18:08] /icon set marcosyn Pro
+[Jun 02 18:09] /whois marcosyn
+[Jun 02 18:09] /join 123
+[Jun 02 18:09] /icon list
+[Jun 02 18:11] /icon add marcosyn Pro
+[Jun 02 18:12] /icon add marcosyn Universe
+[Jun 03 02:08] /icon list
+[Jun 03 02:09] /join 123
+[Jun 03 02:09] /icon set marcosyn Archimonde
+[Jun 03 02:10] /icon set marcosyn 6D3W
+[Jun 03 02:12] /set marcosyn record\w3xp\solo\level 2
+[Jun 03 02:12] /set marcos record\w3xp\solo\level 2
+[Jun 03 02:13] /set marcos record\w3xp\solo\level 5
+[Jun 03 02:13] /set marcos record\w3xp\solo\level 999
+[Jun 03 02:15] /set marcosyn Record\W3XP\userselected_icon WOOD
+[Jun 03 02:15] /set marcos Record\W3XP\userselected_icon WOOD
+[Jun 03 02:18] /set marcos record\w3xp\random\wins 21
+[Jun 03 02:20] /set marcos record\w3xp\orc\wins 3000
+[Jun 03 02:21] /set marcos record\w3xp\orc\wins 300
+[Jun 03 02:21] /set marcos record\w3xp\orcs\wins 300
+[Jun 03 02:21] /set marcos record\w3xp\orc\wins 301
+[Jun 03 02:21] /set marcos record\w3xp\orcs\wins 334
+[Jun 03 02:22] /set marcosyn record\w3xp\orcs\wins 2000
+[Jun 03 02:25] /join 123
+[Jun 03 02:25] /set marcosyn record\w3xp\orcs\wins 334
+[Jun 03 02:25] /set marcos record\w3xp\orcs\wins 2000
+[Jun 03 02:26] /set marcosyn record\w3xp\orcs\wins 2000
+[Jun 03 02:26] /set marcosyn record\w3xp\solo\level 3000
+[Jun 03 02:29] /join 123
+[Jun 03 02:29] /set marcos record\w3xp\solo\level 2000
+[Jun 03 02:29] /set marcosyn Record\W3XP\userselected_icon WOOD
+[Jun 03 04:16] /flag 1
+[Jun 03 04:16] /flag 1
+[Jun 03 04:16] /flag 2
+[Jun 03 09:26] /flag 1
+[Jun 03 09:26] /join 123
+[Jun 03 09:31] /join 123
+[Jun 03 09:31] /flag 1
+[Jun 03 09:31] /flag 2
+[Jun 03 09:57] /join 123
+[Jun 03 10:00] /quiz start dota
+[Jun 03 10:05] /lang esES
+[Jun 03 10:06] /quiz stop
+[Jun 03 10:06] /quiz stats marcos
+[Jun 03 10:07] /stats
+[Jun 03 10:07] /stats marcosyn
+[Jun 03 10:12] /join 123
+[Jun 03 10:12] /icon set marcosyn default
+[Jun 03 10:12] /flag 1
+[Jun 03 10:12] /flag 2
+[Jun 03 10:13] /icon list
+[Jun 03 10:14] /icon set marcos chobo+++
+[Jun 03 10:14] /icon set marcos smile
+[Jun 03 10:14] /icon set marcos default
+[Jun 03 13:14] /join 123
+[Jun 03 13:44] /set marcos record\w3xp\solo\level 200
+[Jun 03 13:45] /set marcos record\w3xp\random\wins 2000
+[Jun 03 13:46] /flag 1
+[Jun 03 13:48] /flag 2
+[Jun 03 13:48] /stats
+[Jun 04 07:40] /join 123
+[Jun 04 10:37] /stats
+[Jun 04 10:37] /quiz stats
+[Jun 04 15:09] /JOIN 123
+[Jun 04 15:34] /rehash transfile
+[Jun 04 15:35] /con
+[Jun 04 15:35] /f a luis
+[Jun 06 16:11] /f a marcosyn
+[Jun 06 16:11] /join 123
+[Jun 06 17:06] /whois marcosyn
+[Jun 06 17:44] /games
+[Jun 06 17:46] /games
+[Jun 06 17:46] /games
+[Jun 06 17:46] /games
+[Jun 06 17:46] /games
+[Jun 06 17:47] /games
+[Jun 06 17:47] /games
+[Jun 06 17:47] /games
+[Jun 06 17:47] /games
+[Jun 07 10:33] /set marcos record\W3XP\TOURNEY\WIN 100
+[Jun 07 10:34] /SET marcos record\tourney\win 100
+[Jun 07 10:34] /set marcos record\tourney\wins 30
+[Jun 07 10:36] /set marcos record\WINS\TOURNEY 222
+[Jun 07 10:52] /set LUIS Record\W3XP\userselected_icon NOCI.
+[Jun 07 10:57] /join 123
+[Jun 07 11:00] /set marcosyn Record\W3XP\userselected_icon 1H3W
+[Jun 07 11:00] /flag 2
+[Jun 07 11:00] /set marcos Record\W3XP\userselected_icon 1H3W
+[Jun 07 11:01] /set marcos Record\W3XP\userselected_icon 6O3W
+[Jun 07 11:02] /set marcos Record\W3XP\userselected_icon WOOD
+[Jun 07 11:03] /set marcos Record\W3XP\userselected_icon 6R3W
+[Jun 07 11:04] /set marcos Record\W3XP\userselected_icon 3D3W
+[Jun 07 11:04] /icon list
+[Jun 07 11:05] /set marcos Record\W3XP\demons_wins
+[Jun 07 11:05] /set marcos Record\W3XP\demons_wins 1
+[Jun 07 11:06] /set marcos Record\W3XP\demons_wins 34
+[Jun 07 11:07] /set Slyhark Record\W3XP\demons_wins 500
+[Jun 07 11:08] /set marcos Record\W3XP\demons_wins 500
+[Jun 07 11:08] /flag 2
+[Jun 07 11:10] /flag 2
+[Jun 07 11:10] /set marcos Record\W3XP\demons_wins 500
+[Jun 07 11:23] /set Slyhark Record\W3XP\demons\wins 300
+[Jun 07 11:23] /set Slyhark Record\W3XP\demons_wins 100
+[Jun 07 11:23] /set marcos Record\W3XP\demons_wins 333
+[Jun 07 11:24] /set marcos Record\W3XP\demons\wins 222
+[Jun 07 11:24] /flag 2
+[Jun 07 11:27] /flag 2
+[Jun 07 11:28] /set luis Record\W3XP\demons\wins 500
+[Jun 07 11:38] /set luis Record\W3XP\demons\wins 500
+[Jun 07 11:44] /set luis record\w3xp\solo\level 1
+[Jun 07 11:45] /set luis Record\W3XP\demons\wins 500

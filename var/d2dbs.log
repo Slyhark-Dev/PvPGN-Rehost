@@ -1,0 +1,146 @@
+Jun 06 15:33:04 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 15:33:04 [info ] app_main: server initialized
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 15:33:04 [error] pvpgn::d2dbs::d2ladder_checksum_check: error open ladder file var\ladders/ladder.D2DV
+Jun 06 15:33:04 [error] pvpgn::d2dbs::d2ladder_check: ladder file checksum error,try to use backup file
+Jun 06 15:33:04 [error] pvpgn::d2dbs::d2ladder_check: error std::rename var\ladders/ladderbk.D2DV to var\ladders/ladder.D2DV
+Jun 06 15:33:04 [error] pvpgn::d2dbs::d2ladder_checksum_check: error open ladder file var\ladders/ladder.D2DV
+Jun 06 15:33:04 [error] pvpgn::d2dbs::d2ladder_check: ladder backup file checksum error,rebuild ladder
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 15:33:04 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 15:33:18 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 15:33:18 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:18 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 15:33:18 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 15:33:18 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 15:33:27 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 15:33:27 [info ] app_main: server initialized
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 15:33:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 16:33:28 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 16:33:28 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 16:33:28 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:12:55 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 17:12:55 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:12:55 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:12:55 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:12:55 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 17:13:09 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 17:13:09 [info ] app_main: server initialized
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:13:09 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:15:56 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 17:15:56 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:15:56 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:15:56 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:15:56 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 17:16:02 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 17:16:02 [info ] app_main: server initialized
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:16:02 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:18:27 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 17:18:27 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:18:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:18:27 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:18:27 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 17:18:35 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 17:18:35 [info ] app_main: server initialized
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:18:35 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:38:38 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 17:38:38 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:38:38 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:38:38 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:38:38 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 17:38:56 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 17:38:56 [info ] app_main: server initialized
+Jun 06 17:38:56 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 17:38:56 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:38:56 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:38:56 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:38:56 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:38:57 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 17:38:57 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:38:57 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:38:57 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:51:26 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 17:51:26 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:51:26 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:51:26 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:51:26 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Jun 06 17:51:32 [info ] app_main: D2DBS Version 1.10.1.1 Built Jul  9 2018 22:57:28
+Jun 06 17:51:32 [info ] app_main: server initialized
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::dbs_server_main: waiting for connections...
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 17:51:32 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 18:02:19 [info ] pvpgn::d2dbs::d2dbs_handle_signal: shutdown server due to std::signal
+Jun 06 18:02:19 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Jun 06 18:02:19 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Jun 06 18:02:19 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Jun 06 18:02:19 [info ] pvpgn::d2dbs::dbs_on_exit: dbserver stopped
+Sep 08 11:56:31 [info ] main: D2DBS Version 1.10.1.1 Built Jul  9 2018 23:03:27
+Sep 08 11:56:31 [info ] main: server initialized
+Sep 08 11:56:31 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Sep 08 11:56:31 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:56:31 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:56:31 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Sep 08 11:56:31 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Sep 08 11:56:31 [error] pvpgn::d2dbs::dbs_server_init: psock_bind() failed : Cannot assign requested address
+Sep 08 11:56:31 [error] pvpgn::d2dbs::dbs_server_main: dbs_server_init error 
+Sep 08 11:58:31 [info ] main: D2DBS Version 1.10.1.1 Built Jul  9 2018 23:03:27
+Sep 08 11:58:31 [info ] main: server initialized
+Sep 08 11:58:31 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Sep 08 11:58:31 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:58:31 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:58:31 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Sep 08 11:58:31 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Sep 08 11:58:31 [error] pvpgn::d2dbs::dbs_server_init: psock_bind() failed : Cannot assign requested address
+Sep 08 11:58:31 [error] pvpgn::d2dbs::dbs_server_main: dbs_server_init error 
+Sep 08 11:58:36 [info ] main: D2DBS Version 1.10.1.1 Built Jul  9 2018 23:03:27
+Sep 08 11:58:36 [info ] main: server initialized
+Sep 08 11:58:36 [info ] pvpgn::d2dbs::dbs_server_main: establishing the listener...
+Sep 08 11:58:36 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:58:36 [info ] pvpgn::d2dbs::d2ladder_checksum_check: ladder file check pass (checksum=0x-248D3FAE)
+Sep 08 11:58:36 [info ] pvpgn::d2dbs::d2ladder_saveladder: backup ladder file
+Sep 08 11:58:36 [info ] pvpgn::d2dbs::d2ladder_saveladder: ladder file saved (0 changes)
+Sep 08 11:58:36 [error] pvpgn::d2dbs::dbs_server_init: psock_bind() failed : Cannot assign requested address
+Sep 08 11:58:36 [error] pvpgn::d2dbs::dbs_server_main: dbs_server_init error 

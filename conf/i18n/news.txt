@@ -1,0 +1,12 @@
+{05/07/2026}
+Mensaje de prueba
+
+{03/29/2014}
+
+Note that text of news is cached in Warcraft 3 client. Be careful when deleting existing news - 
+ it remain on a client side until bncache.dat won't be removed or outdated!
+A file news.txt is loaded once when the server starts. Use command "/rehash news" to reload the file.
+
+ 
+New support channel at:
+http://pvpgn.pro

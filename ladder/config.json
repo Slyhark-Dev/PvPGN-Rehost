@@ -1,0 +1,54 @@
+{
+    "filter": {
+        "ignore_vs_computer": false,
+        "only_human": true
+    },
+
+    "cleanup": {
+        "delete_after_process": false
+    },
+
+    "ipc": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 7773,
+        "timeout": 5.0
+    },
+
+    "watch": {
+        "replay_folder": "C:\\PVPGN\\replays",
+        "workers": 3,
+        "parse_timeout_seconds": 30,
+        "processed_log": "processed_replays.json"
+    },
+
+    "bnmaps_conf_path": "C:\\PVPGN\\conf\\bnmaps.conf",
+
+    "_INFO": [
+        "==========================================================",
+        "Replay Analyzer - PvPGN Bridge",
+        "==========================================================",
+        "",
+        "filter.ignore_vs_computer = true descarta partidas sin al menos 2 teams humanos distintos para procesarlo",
+        "filter.only_human         = true excluye bots/FakePlayer/observers del output",
+        "                            para test poner ambos en false",
+        "",
+        "cleanup.delete_after_process = true elimina el .w3g despues de procesarlo",
+        "",
+        "ipc.enabled = true envia resultados por TCP a PvPGN",
+        "ipc.host / ipc.port = destino donde escucha PvPGN (default 127.0.0.1:7773)",
+        "ipc.timeout = segundos de espera por respuesta OK/ERR",
+        "protocolo: W3MMD_RESULT|match_id|timestamp|gamename|playername|race|flags|pid",
+        "",
+        "watch.replay_folder         = carpeta que se monitorea con watchdog",
+        "watch.workers               = hilos paralelos que procesan replays (cola ilimitada)",
+        "watch.parse_timeout_seconds = timeout por replay antes de descartarlo",
+        "watch.processed_log         = archivo json con replays ya procesados",
+        "",
+        "bnmaps_conf_path = clasifica mapas oficiales vs custom (Maps\\... vs Maps\\Download\\...)",
+        "                   los custom sin W3MMD ni DotA Stats no se envian al IPC",
+        "",
+        "Nota: si IPC falla la linea solo queda visible en el log de la GUI durante la sesion.",
+        "=========================================================="
+    ]
+}

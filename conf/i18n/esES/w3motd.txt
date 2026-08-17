@@ -1,0 +1,9 @@
+Actualmente hay %U usuario(s) en %G partidas de %N, y %u usuario(s) jugando %g partidas y chateando en %c canales.
+
+
+
+
+
+
+
+Este texto es invisible, debido a limitación de 11 lineas.
