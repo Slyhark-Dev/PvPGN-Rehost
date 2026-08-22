@@ -3,27 +3,23 @@
         "ignore_vs_computer": false,
         "only_human": true
     },
-
     "cleanup": {
         "delete_after_process": false
     },
-
     "ipc": {
         "enabled": true,
         "host": "127.0.0.1",
         "port": 7773,
         "timeout": 5.0
     },
-
     "watch": {
-        "replay_folder": "C:\\PVPGN\\replays",
+        "replay_folder": "C:\\PVPGN\\main\\replays",
         "workers": 3,
         "parse_timeout_seconds": 30,
-        "processed_log": "processed_replays.json"
+        "processed_log": "processed_replays.json",
+        "autostart": 1
     },
-
     "bnmaps_conf_path": "C:\\PVPGN\\conf\\bnmaps.conf",
-
     "_INFO": [
         "==========================================================",
         "Replay Analyzer - PvPGN Bridge",
@@ -44,6 +40,8 @@
         "watch.workers               = hilos paralelos que procesan replays (cola ilimitada)",
         "watch.parse_timeout_seconds = timeout por replay antes de descartarlo",
         "watch.processed_log         = archivo json con replays ya procesados",
+        "watch.autostart             = 0 arranca detenido, hay que apretar Iniciar Monitor",
+        "                              1 arranca monitoreando solo al abrir el programa",
         "",
         "bnmaps_conf_path = clasifica mapas oficiales vs custom (Maps\\... vs Maps\\Download\\...)",
         "                   los custom sin W3MMD ni DotA Stats no se envian al IPC",
