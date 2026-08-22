@@ -48,14 +48,15 @@ Todo este intercambio ocurre en segundo plano, en cuestión de segundos, sin que
 
 **Requerimientos:** [MapServer y MapClient](https://github.com/Slyhark-Dev/Editor-launcherPvPGN)
 
-### Mapa de puertos example:
+### Mapa de puertos IPC :
 
 | Puerto | Canal | Sentido | Contenido |
 |---|---|---|---|
-| 7772 | IPC | PvPGN → MapServer | Órdenes y consultas internas (registro de usuario, órdenes de rehost/upload, consulta de información de mapa) |
 | 7776 | Comandos | MapServer ↔ MapClient | Registro del cliente, envío de órdenes, verificación de actividad |
 | 7775 | Archivo de configuración | MapClient → MapServer | Transferencia del archivo de configuración generado tras analizar el mapa |
 | 7774 | Subida de mapa | MapClient → MapServer | Envío del archivo del mapa durante una subida |
+| 7773 | Lectura de replay | ReplayAnalyzer → MapServer | Envío de flag winner and losser mediante un replay con sistema w3mmd |
+| 7772 | Acreditación de user | PvPGN → MapServer | Órdenes y consultas internas (registro de usuario, órdenes de rehost/upload, consulta de información de mapa) |
 
 Esta comunicación reemplazó a un esquema anterior basado en archivos de texto compartidos, que dependía de lecturas periódicas de disco. El esquema actual usa conexiones directas por sockets, lo que elimina esa dependencia y hace la coordinación más inmediata y confiable.
 
