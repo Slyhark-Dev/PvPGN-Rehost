@@ -13,6 +13,7 @@ PvPGN es un software de servidor multiplataforma gratuito y de código abierto q
 ![Build](https://img.shields.io/badge/build-PASSING-brightgreen)
 ![Python](https://img.shields.io/badge/powered%20by-Python-3776AB)
 ![JSON](https://img.shields.io/badge/config-JSON-lightgrey)
+![LUA](https://img.shields.io/badge/PvPGN-lua%201.27b-orange)
 
 ## Características y modificaciones personalizadas
 
