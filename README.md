@@ -126,6 +126,40 @@ Por defecto, el seguimiento está habilitado y se usa únicamente para enviar da
 
 Si tu proveedor de VPS no asigna una IP pública directa, o si hospedas desde tu casa detrás de un NAT, necesitas configurar la traducción de rutas en `address_translation.conf`. La dirección pública se envía como dirección del servidor de rutas a los clientes del juego al buscar partidas.
 
+Cómo descargar el proyecto
+
+Este repositorio usa Git LFS para los archivos grandes (parches .mpq de WarCraft 3). Por eso es importante descargarlo de la forma correcta.
+
+✅ Método correcto: clonar con Git
+Instalá Git si no lo tenés: https://git-scm.com/downloads
+Abrí una terminal (Git Bash, PowerShell o CMD)
+Navegá a la carpeta donde querés guardar el proyecto, por ejemplo:
+bash
+cd Desktop
+Cloná el repositorio:
+bash
+git clone https://github.com/Slyhark-Dev/PvPGN-Rehost.git
+
+Ejemplo de cómo se ve en consola:
+
+C:\Users\TuUsuario> cd Desktop
+C:\Users\TuUsuario\Desktop> git clone https://github.com/Slyhark-Dev/PvPGN-Rehost.git
+Cloning into 'PvPGN-Rehost'...
+remote: Enumerating objects: 350, done.
+remote: Counting objects: 100% (350/350), done.
+remote: Compressing objects: 100% (280/280), done.
+Receiving objects: 100% (350/350), 4.20 MiB | 2.15 MiB/s, done.
+Filtering content: 100% (10/10), 385.30 MiB | 8.40 MiB/s, done.
+C:\Users\TuUsuario\Desktop>
+
+Cuando termine, vas a tener la carpeta PvPGN-Rehost con todo el contenido completo, incluyendo los archivos .mpq en su tamaño real.
+
+❌ Método que NO funciona: botón "Download ZIP"
+
+El botón verde Code → Download ZIP de GitHub no incluye el contenido real de los archivos LFS. Los .mpq van a aparecer con solo 1 KB de tamaño (rotos e inutilizables). Esta es una limitación de GitHub, no un error del repositorio.
+
+Si ya descargaste el ZIP y los archivos de la carpeta files/ pesan casi nada, es por este motivo. Solución: borrá esa copia y usá git clone en su lugar.
+
 ## Soporte y licencia
 
 Crea un issue si tienes preguntas o sugerencias sobre esta versión personalizada.
