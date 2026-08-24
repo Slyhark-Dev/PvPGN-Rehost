@@ -130,8 +130,9 @@ Cómo descargar el proyecto
 
 Este repositorio usa Git LFS para los archivos grandes (parches .mpq de WarCraft 3). Por eso es importante descargarlo de la forma correcta.
 
-✅ Método correcto: clonar con Git
-Instalá Git si no lo tenés: https://git-scm.com/downloads
+## Método correcto: clonar con Git
+
+✅ Instalá Git si no lo tenés: https://git-scm.com/downloads
 Abrí una terminal (Git Bash, PowerShell o CMD)
 Navegá a la carpeta donde querés guardar el proyecto, por ejemplo:
 bash
