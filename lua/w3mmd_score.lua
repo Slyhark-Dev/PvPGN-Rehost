@@ -26,6 +26,19 @@ local RESULTS_LOG_FILE   = nil
 local DEBUG_ENABLED      = false
 local EXP_REWARDS        = {}
 
+-- CONTROL DE RECALCULO DE RANKING
+-- ranks_dirty        : true cuando llego al menos un resultado sin procesar en ranking
+-- last_rank_event    : timestamp del ultimo resultado recibido (reinicia el debounce)
+-- RANK_DEBOUNCE_SECS : segundos de silencio requeridos antes de recalcular
+-- RANK_MAX_UID       : uid maximo a escanear (tope duro de seguridad)
+-- RANK_MAX_GAP       : uids consecutivos inexistentes antes de cortar el escaneo.
+--                      Absorbe huecos por cuentas borradas sin recorrer todo el rango.
+local ranks_dirty        = false
+local last_rank_event    = 0
+local RANK_DEBOUNCE_SECS = 60
+local RANK_MAX_UID       = 5000
+local RANK_MAX_GAP       = 200
+
 -- MAPEO DE RAZAS A CAMPOS DE BASE DE DATOS
 local RACE_MAPPING = {
     ["human"]    = "humans",
@@ -241,7 +254,80 @@ function update_player_exp_and_stats(playername, result_type, race)
             playername, result_text, exp_gained, new_level, new_exp, new_wins, new_losses, race_info, status))
     end
     
+    -- Marca pendiente de recalculo. No recalcula aqui: esta funcion corre una vez
+    -- por jugador. El recalculo real lo dispara w3mmd_score_mainloop() tras el
+    -- debounce, procesando todos los resultados acumulados en una sola pasada.
+    if success then
+        ranks_dirty     = true
+        last_rank_event = os.time()
+    end
+    
     return success
+end
+
+-- ============================================================================
+-- RECALCULO DE RANKING SOLO
+-- ============================================================================
+-- Recorre las cuentas por uid, filtra las que tienen xp > 0, las ordena por xp
+-- descendente y escribe la posicion en Record\W3XP_solo_rank.
+--
+-- Por que se itera por uid y no con server_get_users():
+--   server_get_users() solo devuelve las cuentas presentes en el hashtable en
+--   memoria. En modo SQL el servidor arranca con el hashtable vacio y las
+--   cuentas entran de forma incidental (login, lista de amigos, partida nativa,
+--   resultado por IPC), por lo que ese listado es incompleto e impredecible.
+--   api.account_get_by_id(uid) en cambio resuelve por uid y, si la cuenta no
+--   esta cargada, la trae desde la base de datos. Iterar el rango de uids
+--   garantiza cobertura completa sin depender de quien se conecto.
+--
+-- Optimizaciones:
+--   - Cuentas con xp = 0 se descartan antes del sort
+--   - Solo se escribe la cuenta cuya posicion cambio respecto al valor actual
+--   - Corte anticipado tras RANK_MAX_GAP uids consecutivos inexistentes
+--
+-- Retorna: tabla ordenada de cuentas con xp, cantidad de escrituras realizadas.
+-- ============================================================================
+function recalculate_solo_ranks()
+    local ranked   = {}
+    local gap      = 0
+    local scanned  = 0
+    local uid      = 1
+
+    while uid <= RANK_MAX_UID and gap < RANK_MAX_GAP do
+        local acc = api.account_get_by_id(uid)
+
+        if acc and acc.name and acc.name ~= "" then
+            gap     = 0
+            scanned = scanned + 1
+
+            local xp = api.account_get_attr(acc.name, "Record\\W3XP_solo_xp", attr_type_num) or 0
+            if xp > 0 then
+                table.insert(ranked, { name = acc.name, xp = xp })
+            end
+        else
+            gap = gap + 1
+        end
+
+        uid = uid + 1
+    end
+
+    table.sort(ranked, function(a, b) return a.xp > b.xp end)
+
+    local changed = 0
+    for pos, entry in ipairs(ranked) do
+        local current = api.account_get_attr(entry.name, "Record\\W3XP_solo_rank", attr_type_num) or 0
+        if current ~= pos then
+            api.account_set_attr(entry.name, "Record\\W3XP_solo_rank", attr_type_num, pos)
+            changed = changed + 1
+        end
+    end
+
+    if DEBUG_ENABLED then
+        print(string.format("[W3MMD-RANK] Recalculo completado: %d cuentas encontradas, %d con xp, %d posiciones actualizadas",
+            scanned, #ranked, changed))
+    end
+
+    return ranked, changed
 end
 
 -- ============================================================================
@@ -329,9 +415,18 @@ end
 -- ============================================================================
 -- MAINLOOP INTEGRATION
 -- ============================================================================
--- Ya no se usa polling. process_w3mmd_results_log() se dispara directamente
--- desde handle_game_end() en handle_game.lua cada vez que finaliza una partida.
+-- Ya no se usa polling de resultados. Los resultados entran por IPC.
+--
+-- Este tick solo controla el recalculo diferido del ranking:
+--   - Sin partidas: ranks_dirty = false, no se hace ningun trabajo
+--   - Con partidas: cada resultado reinicia last_rank_event, de modo que un lote
+--     de N jugadores (o varias partidas en paralelo) colapsa en un unico
+--     recalculo, disparado tras RANK_DEBOUNCE_SECS de silencio
 function w3mmd_score_mainloop()
+    if ranks_dirty and (os.time() - last_rank_event >= RANK_DEBOUNCE_SECS) then
+        recalculate_solo_ranks()
+        ranks_dirty = false
+    end
 end
 
 -- ============================================================================
@@ -454,6 +549,27 @@ function command_w3stats(account, text)
     return 0
 end
 
+-- Fuerza un recalculo inmediato del ranking, sin esperar el debounce.
+-- Util para la carga inicial de ranks y para diagnostico.
+function command_rankfix(account, text)
+    api.message_send_text(account.name, message_type_info, nil, "Recalculando ranking...")
+
+    local ranked, changed = recalculate_solo_ranks()
+
+    -- El recalculo quedo al dia: cancela cualquier pendiente del debounce
+    ranks_dirty = false
+
+    api.message_send_text(account.name, message_type_info, nil,
+        string.format("Ranking actualizado: %d cuentas con xp, %d posiciones modificadas", #ranked, changed))
+
+    for i = 1, math.min(3, #ranked) do
+        api.message_send_text(account.name, message_type_info, nil,
+            string.format("  %d. %s (%d xp)", i, ranked[i].name, ranked[i].xp))
+    end
+
+    return 0
+end
+
 -- ============================================================================
 -- INICIALIZACION
 -- ============================================================================
@@ -488,6 +604,18 @@ function w3mmd_score_init()
             print("[W3MMD-RAZA]   " .. race_name .. " -> W3XP_" .. race_field .. "_wins/losses")
         end
         print("[W3MMD-RAZA] OK ACTUALIZACION INSTANTANEA CON RAZAS HABILITADA")
+    end
+
+    -- Programa un recalculo inicial del ranking. No se ejecuta aqui para no
+    -- bloquear el arranque del servidor: solo se marca como pendiente y el
+    -- mainloop lo dispara tras RANK_DEBOUNCE_SECS, con el servidor ya operativo.
+    -- Esta primera pasada carga las cuentas desde la base de datos al hashtable;
+    -- las siguientes ya las resuelven en memoria.
+    ranks_dirty     = true
+    last_rank_event = os.time()
+
+    if DEBUG_ENABLED then
+        print("[W3MMD-RANK] Recalculo inicial programado en " .. RANK_DEBOUNCE_SECS .. " segundos")
         print("[W3MMD-RAZA] =======================================")
     end
 end
